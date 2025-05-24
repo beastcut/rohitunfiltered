@@ -325,52 +325,90 @@
     margin-left: 50px;
 }
 
-.s1{
-    float: left;
-    margin-left: -10px;
-}
-
-  .s2{
-    margin-left: -270px;
-    float: left;
-  margin-top: 400px;
-  }
-
-  .s3{
-     margin-top: 200px;
-    float: left;
-    margin-left: -270px;
-  }
-  
-  .p1{
+   .p1{
     margin-left: -10px;
     float: left;
   }
     
   .p2{
-    margin-left: -270px;
+    margin-left: -320px;
     float: left;
-  margin-top: 400px;
+  margin-top: 500px;
   }
 
   .p3{
-     margin-top: 200px;
+     margin-top: 250px;
     float: left;
-    margin-left: -270px;
+    margin-left: -320px;
+  }
+
+     .s1{
+    margin-left: -10px;
+    float: left;
+  }
+    
+  .s2{
+    margin-left: -320px;
+    float: left;
+  margin-top: 500px;
+  }
+
+  .s3{
+     margin-top: 250px;
+    float: left;
+    margin-left: -320px;
+  }
+
+    .l1{
+    margin-left: -10px;
+    float: left;
+  }
+    
+  .l2{
+    margin-left: -320px;
+    float: left;
+  margin-top: 500px;
+  }
+
+  .l3{
+     margin-top: 250px;
+    float: left;
+    margin-left: -320px;
   }
   
+   .latest{
+        float: left;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
     .shorts{
-        margin-top: 750px;
+        margin-top: 1750px;
         text-align: center;
         margin-left: 40px;
     }
     .populars{
         float: left;
-        margin-top: 20px;
-        margin-left: 40px;
+        margin-top: 900px;
+        margin-left: -310px;
+    }
+
+   .populars iframe{
+      height: 200px;
+      width: 300px;
+    }
+    .shorts iframe{
+      height: 200px;
+      width: 300px;
+    }
+     .latest iframe{
+      height: 200px;
+      width: 300px;
+    }
+.latest h1{
+      margin-left: 5px;
     }
     .populars h1{
-      margin-left: 0px;
+      margin-left: 10px;
     }
     .info{
         position: relative;
@@ -509,19 +547,12 @@
     }
     
     
+    hai
     
-    
-    .populars iframe{
-      height: 150px;
-      width: 250px;
-    }
-    .shorts iframe{
-      height: 150px;
-      width: 250px;
-    }
+ 
     
     .footer {
-      margin-top: 60%;
+      margin-top: 70%;
       padding-bottom: 200px;
       width: 100%;
     }
@@ -534,7 +565,7 @@
         padding:0.6% 0%;
         color:gray;
         font-size:0.8em;
-        width: 100%;
+        width: 26%;
         }
 
   }

@@ -116,7 +116,7 @@
       </div>
   <script>
     const API_KEY = 'AIzaSyAOOjPjfBhe8AmDh_vwSeCUvHYVUUwSCiw';
-const VIDEO_IDS = ['tZkRPq2OqgY', 'ku2XECXqaXE', 'cBMLvHqkIhE' , 'Bqb4xmHUZOc' , 'efXt24g8U1o' , '6Xy5Ku68qeo']; // Add more video IDs as needed
+const VIDEO_IDS = ['tMOCvC0gbHk' , 'tMOCvC0gbHk' , 'tMOCvC0gbHk' , '-ihIEsobPyk', 'ku2XECXqaXE', '-caM0v_ITVs' , 'Bqb4xmHUZOc' , 'efXt24g8U1o' , '6Xy5Ku68qeo']; // Add more video IDs as needed
 
 async function fetchLiveViews(videoId, elementId) {
     try {
@@ -160,26 +160,50 @@ fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chann
   });
 </script>
 
-<div class="populars">
-  <h1 style="color: rgb(248, 96, 96); font-size: 30px; padding-bottom: 20px;">populars</h1>
+<div class="latest">
+  <h1 style="color: rgb(248, 96, 96); font-size: 30px; padding-bottom: 20px;">lastest</h1>
   <div id="viewCounts">
-       <div class="p1">
+       <div class="l1">
         <iframe 
         src="https://www.youtube.com/embed/tZkRPq2OqgY">
         </iframe>
         <p id="viewCount1" style= "color: aliceblue; ">Loading...</p>
        </div>
-       <div class="p2">
+       <div class="l2">
         <iframe 
         src="https://www.youtube.com/embed/cBMLvHqkIhE">
         </iframe>
         <p id="viewCount3" style="text-align: center; color: aliceblue;">Loading...</p>
        </div>
-       <div class="p3">
+       <div class="l3">
         <iframe 
         src="https://www.youtube.com/embed/ku2XECXqaXE">
         </iframe>
         <p id="viewCount2" style=" color: aliceblue; ">Loading...</p> 
+       </div>
+    </div>
+</div>
+
+<div class="populars">
+  <h1 style="color: rgb(248, 96, 96); font-size: 30px; padding-bottom: 20px;">populars</h1>
+  <div id="viewCounts">
+       <div class="p1">
+        <iframe 
+        src="https://www.youtube.com/embed/-ihIEsobPyk">
+        </iframe>
+        <p id="viewCount4" style= "color: aliceblue; ">Loading...</p>
+       </div>
+       <div class="p2">
+        <iframe 
+        src="https://www.youtube.com/embed/-caM0v_ITVs">
+        </iframe>
+        <p id="viewCount5" style="text-align: center; color: aliceblue;">Loading...</p>
+       </div>
+       <div class="p3">
+        <iframe 
+        src="https://www.youtube.com/embed/ku2XECXqaXE">
+        </iframe>
+        <p id="viewCount6" style=" color: aliceblue; ">Loading...</p> 
        </div>
     </div>
 </div>
@@ -191,21 +215,21 @@ fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chann
          <iframe 
         src="https://www.youtube.com/embed/Bqb4xmHUZOc">
         </iframe>
-        <p id="viewCount4" style=" color: aliceblue;">Loading...</p>
+        <p id="viewCount7" style=" color: aliceblue;">Loading...</p>
       </div>
           <div class="s2">
             <iframe
             src="https://www.youtube.com/embed/efXt24g8U1o">
       
             </iframe>
-            <p id="viewCount5" style=" color: aliceblue; ;">Loading...</p>
+            <p id="viewCount8" style=" color: aliceblue; ;">Loading...</p>
       
           </div>
           <div class="s3">
             <iframe 
             src="https://www.youtube.com/embed/6Xy5Ku68qeo">
             </iframe>
-            <p id="viewCount6" style="text-align: center; color: aliceblue;">Loading...</p>
+            <p id="viewCount9" style="text-align: center; color: aliceblue;">Loading...</p>
           </div>
          
           <!-- Add more viewCount elements as needed -->
