@@ -309,6 +309,11 @@ section:target div .footer {
   width: 350px;
 }
 
+.latest iframe{
+  height: 200px;
+  width: 350px;
+}
+
 .subscriber-count {
   display: flex;
   align-items: center;
@@ -511,7 +516,13 @@ font-size: 40px;
   }
 
 
-
+.l1{
+  float: left;
+}
+.l2
+{
+  float: right;
+}
 
 .s1{
   float: left;
@@ -542,11 +553,16 @@ font-size: 40px;
 }
 
 .sub button{
-  margin-right: 750px;
+  margin-right: 0px;
   cursor: pointer;
 }
 
 .abt button{
-  margin-right: 750px;
+  margin-right: 0px;
 cursor: pointer;
+}
+
+.hai {
+  display: inline-flex;
+  margin-left: -650px;
 }
