@@ -1,5 +1,5 @@
 const API_KEY = 'AIzaSyAOOjPjfBhe8AmDh_vwSeCUvHYVUUwSCiw';
-const VIDEO_IDS = ['tMOCvC0gbHk' , 'tMOCvC0gbHk' , 'tMOCvC0gbHk' , '-ihIEsobPyk', 'ku2XECXqaXE', '-caM0v_ITVs' , 'Bqb4xmHUZOc' , 'efXt24g8U1o' , '6Xy5Ku68qeo']; // Add more video IDs as needed
+const VIDEO_IDS = ['fKrW1IpKjEY' , 'I2EVKfgf0v4' , 'dLqr3HrsvgY' , '-ihIEsobPyk', '-caM0v_ITVs', 'tMOCvC0gbHk' , 'Bqb4xmHUZOc' , 'XOro78obdXU' , '-RB9fUYgihs']; // Add more video IDs as needed
 
 async function fetchLiveViews(videoId, elementId) {
     try {

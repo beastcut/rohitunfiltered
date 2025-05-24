@@ -314,6 +314,11 @@ section:target div .footer {
   width: 350px;
 }
 
+.latest h1{
+  text-align: center;
+  margin-right: 250px;
+}
+
 .subscriber-count {
   display: flex;
   align-items: center;

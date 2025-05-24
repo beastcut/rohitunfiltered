@@ -165,19 +165,19 @@ fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chann
   <div id="viewCounts">
        <div class="l1">
         <iframe 
-        src="https://www.youtube.com/embed/tZkRPq2OqgY">
+        src="https://www.youtube.com/embed/fKrW1IpKjEY">
         </iframe>
         <p id="viewCount1" style= "color: aliceblue; ">Loading...</p>
        </div>
        <div class="l2">
         <iframe 
-        src="https://www.youtube.com/embed/cBMLvHqkIhE">
+        src="https://www.youtube.com/embed/dLqr3HrsvgY">
         </iframe>
         <p id="viewCount3" style="text-align: center; color: aliceblue;">Loading...</p>
        </div>
        <div class="l3">
         <iframe 
-        src="https://www.youtube.com/embed/ku2XECXqaXE">
+        src="https://www.youtube.com/embed/I2EVKfgf0v4">
         </iframe>
         <p id="viewCount2" style=" color: aliceblue; ">Loading...</p> 
        </div>
@@ -195,15 +195,15 @@ fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chann
        </div>
        <div class="p2">
         <iframe 
-        src="https://www.youtube.com/embed/-caM0v_ITVs">
+        src="https://www.youtube.com/embed/tMOCvC0gbHk">
         </iframe>
-        <p id="viewCount5" style="text-align: center; color: aliceblue;">Loading...</p>
+        <p id="viewCount6" style="text-align: center; color: aliceblue;">Loading...</p>
        </div>
        <div class="p3">
         <iframe 
-        src="https://www.youtube.com/embed/ku2XECXqaXE">
+        src="https://www.youtube.com/embed/-caM0v_ITVs">
         </iframe>
-        <p id="viewCount6" style=" color: aliceblue; ">Loading...</p> 
+        <p id="viewCount5" style=" color: aliceblue; ">Loading...</p> 
        </div>
     </div>
 </div>
@@ -219,17 +219,17 @@ fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chann
       </div>
           <div class="s2">
             <iframe
-            src="https://www.youtube.com/embed/efXt24g8U1o">
+            src="https://www.youtube.com/embed/-RB9fUYgihs">
       
             </iframe>
-            <p id="viewCount8" style=" color: aliceblue; ;">Loading...</p>
+            <p id="viewCount9" style=" color: aliceblue; ;">Loading...</p>
       
           </div>
           <div class="s3">
             <iframe 
-            src="https://www.youtube.com/embed/6Xy5Ku68qeo">
+            src="https://www.youtube.com/embed/XOro78obdXU">
             </iframe>
-            <p id="viewCount9" style="text-align: center; color: aliceblue;">Loading...</p>
+            <p id="viewCount8" style="text-align: center; color: aliceblue;">Loading...</p>
           </div>
          
           <!-- Add more viewCount elements as needed -->
@@ -329,6 +329,311 @@ INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Satyam
   <section id= 'fourth'>
     <h4>Loading...</h4>
     <h1>setting</h1>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop-Out Box</title>
+  <style>
+
+    /* Pop-out box styling */
+    .popup-box {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+
+    /* Overlay styling */
+    .overlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    /* Button styling */
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to trigger the pop-out box -->
+  <button class="btn" onclick="openPopup()">Stopwatch</button>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+  <!-- Pop-out box -->
+  <div class="popup-box" id="popupBox">
+    <h2>STOPWATCH</h2>
+   <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+     button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+    .stopwatch {
+      font-size: 2rem;
+      color: rgb(1, 1, 1);
+    }
+  </style>
+</head>
+<body>
+  <div class="stopwatch">00:00:00</div>
+  <button onclick="startStopwatch()">Start</button>
+  <button onclick="stopStopwatch()">Stop</button>
+  <button onclick="resetStopwatch()">Reset</button>
+
+  <script>
+    let stopwatchInterval;
+    let elapsedTime = 0;
+
+    function formatTime(ms) {
+      const totalSeconds = Math.floor(ms / 1000);
+      const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+      const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+      const seconds = String(totalSeconds % 60).padStart(2, '0');
+      return `${hours}:${minutes}:${seconds}`;
+    }
+
+    function updateDisplay() {
+      document.querySelector('.stopwatch').textContent = formatTime(elapsedTime);
+    }
+
+    function startStopwatch() {
+      if (!stopwatchInterval) {
+        const startTime = Date.now() - elapsedTime;
+        stopwatchInterval = setInterval(() => {
+          elapsedTime = Date.now() - startTime;
+          updateDisplay();
+        }, 100);
+      }
+    }
+
+    function stopStopwatch() {
+      clearInterval(stopwatchInterval);
+      stopwatchInterval = null;
+    }
+
+    function resetStopwatch() {
+      stopStopwatch();
+      elapsedTime = 0;
+      updateDisplay();
+    }
+  </script>
+</body>
+</html>
+
+    <button class="btn" onclick="closePopup()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the pop-out box
+    function openPopup() {
+      document.getElementById('popupBox').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the pop-out box
+    function closePopup() {
+      document.getElementById('popupBox').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop-Out Box</title>
+  <style>
+
+    /* Pop-out box styling */
+    .popup-box1 {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+
+    /* Overlay styling */
+    .overlay1 {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    /* Button styling */
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to trigger the pop-out box -->
+  <button class="btn" onclick="openPopup1()">Alarm</button>
+
+  <!-- Overlay -->
+  <div class="overlay1" id="overlay1" onclick="closePopup1()"></div>
+
+  <!-- Pop-out box -->
+  <div class="popup-box1" id="popupBox1">
+    <h2>ALARM</h2>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alarm Clock</title>
+  <style>
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="alarmTime">Set Alarm Time:</label>
+  <input type="time" id="alarmTime">
+  <button onclick="setAlarm()">Set Alarm</button>
+  <button onclick="stopAlarm()">Stop Alarm</button>
+
+  <p id="status"></p>
+
+  <audio id="alarmAudio" src="audio/iphone-alarm meloboom.mp3" preload="auto" loop></audio>
+
+  <script>
+    let alarmTime = null;
+    let alarmTimeout = null;
+
+    function setAlarm() {
+      const timeInput = document.getElementById('alarmTime').value;
+      if (!timeInput) {
+        alert("Please select a time first.");
+        return;
+      }
+
+      const now = new Date();
+      const alarmDate = new Date();
+      const [hours, minutes] = timeInput.split(":");
+      alarmDate.setHours(hours, minutes, 0, 0);
+
+      if (alarmDate < now) {
+        alarmDate.setDate(alarmDate.getDate() + 1);
+      }
+
+      const timeToAlarm = alarmDate - now;
+
+      clearTimeout(alarmTimeout);
+      alarmTimeout = setTimeout(() => {
+        document.getElementById('alarmAudio').play();
+        document.getElementById('status').textContent = "⏰ Alarm ringing!";
+      }, timeToAlarm);
+
+      document.getElementById('status').textContent = `Alarm set for ${alarmDate.toLocaleTimeString()}`;
+    }
+
+    function stopAlarm() {
+      const audio = document.getElementById('alarmAudio');
+      audio.pause();
+      audio.currentTime = 0;
+      clearTimeout(alarmTimeout);
+      document.getElementById('status').textContent = "Alarm stopped.";
+    }
+  </script>
+</body>
+</html>
+
+    <button class="btn" onclick="closePopup1()">Close</button>
+  </div>
+
+  <script>
+    // Function to open the pop-out box
+    function openPopup1() {
+      document.getElementById('popupBox1').style.display = 'block';
+      document.getElementById('overlay1').style.display = 'block';
+    }
+
+    // Function to close the pop-out box
+    function closePopup1() {
+      document.getElementById('popupBox1').style.display = 'none';
+      document.getElementById('overlay1').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
+
+
+
    </section>
  </div>
 </body>
